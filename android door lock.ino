@@ -17,11 +17,11 @@ void loop() {
   if(bluetooth.available()> 0 ) // receive number from bluetooth
   {
     int a = bluetooth.read(); // save the received number to servopos
-      if(a==245)//unlock(too in app)
+      if(a==245)//unlock
     {
       servo.write(0);
     }
-    if(a==225)//lock(344 in app)
+    if(a==225)//lock
     {
       servo.write(90);
     }
